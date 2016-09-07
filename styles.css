@@ -30,7 +30,7 @@ h1.name span {
 }
 
 div.bild {
-    background-image: url('3.jpg');
+    background-image: url('bilder/titelbild.jpg');
     height: 700px;
     background-size: cover;
 }
