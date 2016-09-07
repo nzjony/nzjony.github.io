@@ -99,6 +99,23 @@ section.gallery  img
     margin-bottom: 3px;
 }
 
+div.kaufen
+{
+    padding-top: 30px;
+}
+
+div.kaufen a
+{
+    text-align:center;
+    font-size:1.1em;
+    display:block;
+}
+
+div.kaufen img
+{
+    width: 100%;
+}
+
 section div.music div.audio
 {
     width:300px;
