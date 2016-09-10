@@ -185,7 +185,7 @@ Im Leben eines Teenagers herrscht immer gen&uuml;gend Gef&uuml;hlschaos und der 
             <div class="kaufen">
                 <h1> CD Kaufen</h1>
                 <p>M&ouml;chtest du mein Album 'Sunrise' kaufen? Dann klicke einfach auf das Bild und schreibe mir eine E-Mail.</p>
-                <a href="mailto:louisaemail?subject=Ich%20m%C3%B6chte%20dein%20Album%20'Sunrise'%20kaufen!&amp;body=Hallo%20Louisa%2C%0A%0Aich%20m%C3%B6chte%20gern%20dein%20Album%20'Sunrise'%20kaufen.%0A%0AMeine%20Adresse%20ist%3A%0A%0A%0A%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen%0A""><img src="bilder/album.jpg"/></a>
+                <a id="buylink"><img src="bilder/album.jpg"/></a>
             </div>
         </div>
     </section>
@@ -210,7 +210,7 @@ Im Leben eines Teenagers herrscht immer gen&uuml;gend Gef&uuml;hlschaos und der 
                     <a target="_blank" href="https://www.facebook.com/louisa.worshipthe1"><h2 class="facebook"><i class="fa fa-facebook"></i></h2></a>
                 </div>
                 <div class="w3-container w3-half">
-                    <a href="mailto:louisa.email"><h2 class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i></h2></a>
+                    <a id="kontakt"><h2 class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i></h2></a>
                 </div>
             </div>
         </div>
@@ -221,5 +221,12 @@ Im Leben eines Teenagers herrscht immer gen&uuml;gend Gef&uuml;hlschaos und der 
         <p>&copy; 2016 Louisa - All rights reserved </p>
     </div>
 </footer>
-
+<script type="text/javascript" src="contact-dev.js"></script>
+    <script type="text/javascript">
+        var string = "l" + decode("2c224716e4d7b6c8d3998fb26748150213cad1bc590a");
+        var mailto="mailto:"+string;
+        var email_string=mailto+"?subject=Ich%20m%C3%B6chte%20dein%20Album%20'Sunrise'%20kaufen!&body=Hallo%20Louisa%2C%0A%0Aich%20m%C3%B6chte%20gern%20dein%20Album%20'Sunrise'%20kaufen.%0A%0AMeine%20Adresse%20ist%3A%0A%0A%0A%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen%0A";
+        document.getElementById("buylink").href = email_string;
+        document.getElementById("kontakt").href = mailto; 
+    </script>
 </html>
