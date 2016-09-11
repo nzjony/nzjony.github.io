@@ -188,3 +188,15 @@ footer p
     text-align:center;
     font-family: sans-serif;
 }
+
+
+@media screen and (max-width:650px) {
+    section.home--events > div {
+        max-width:500px;
+    }
+    div.bild {
+        background-image: url('bilder/titelbild.jpg');
+        height: 300px;
+        background-size: cover;
+    }
+}
