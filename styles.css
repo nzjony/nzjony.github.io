@@ -196,7 +196,7 @@ footer p
     }
     div.bild {
         background-image: url('bilder/titelbild.jpg');
-        height: 300px;
+        height: 250px;
         background-size: cover;
     }
 }
