@@ -23,8 +23,9 @@ h1.name span {
 
 div.bild {
     background-image: url('bilder/titelbild.jpg');
-    height: 700px;
+    height: 100vh;
     background-size: cover;
+    background-position: 100% 0%;
 }
 
 section.even {
@@ -118,7 +119,7 @@ div.kaufen img
 
 section div.music div.audio
 {
-    width:300px;
+    /*width:300px;*/
     border: 1px solid #444;
 }
 
@@ -150,7 +151,8 @@ div.nav div a {
 
 .container h4 {
     font-family: 'Cinzel Decorative', cursive;
-    min-width: 360px;
+    /*min-width: 360px;*/
+    font-size: 1.1em;
 }
 
 .container p {
@@ -190,13 +192,15 @@ footer p
 }
 
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:736px) {
     section.home--events > div {
         max-width:500px;
     }
     div.bild {
         background-image: url('bilder/titelbild.jpg');
-        height: 250px;
+        height: 100vh;
+        max-height: 400px;
         background-size: cover;
+        background-position: 100% 0%;
     }
 }
